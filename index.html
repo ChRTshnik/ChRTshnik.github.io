@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Тестовое задание</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+
+        <div class="title-slide">
+          <div class="arrow">
+            <img class="arrow2" src="pic/arrow2.png" alt="" onclick="about()">
+            <img src="pic/circle.png" alt="" onclick="about()">
+            <div class="aboutmebutton" onclick="about()">Обо мне</div>
+          </div>
+          
+            <div class="container">
+                <div class="title">
+                    <div class="block-photo">
+                         <!-- <img src="pic/photo.jpg" class="my-photo"> --> 
+                    </div>
+                    <div class="my-name">
+                       <img class="line" src="pic/line.png">
+                       Виталий Михайлов
+                        <div class="aka">
+                            aka Чичипаха
+                        </div>
+                       <img class="smile" src="pic/smile.png">
+                    </div>
+                </div>
+                <div class="contacts">
+                  <div class="telephone">
+                    Телефон - 89962294586
+                  </div>
+                  <div class="exp-work">
+                    Опыт работы - нет
+                  </div>
+                  <div class="adress">
+                    Адрес - г.Копейск, пос. Старокамышинск
+                  </div>
+                </div>
+                <div class="experience">
+                  <div class="block-exp">
+                    <div class="name-langprog">
+                      Знание JS
+                    </div>
+                    <div class="level-exp">
+                      Очень плохо
+                    </div>
+                  </div>
+                  <div class="block-exp">
+                    <div class="name-langprog">
+                      Знание С++
+                    </div>
+                    <div class="level-exp">
+                      Очень плохо
+                    </div>
+                  </div>
+                  <div class="block-exp">
+                    <div class="name-langprog">
+                      Знание Swift
+                    </div>
+                    <div class="level-exp">
+                      Отсутсвует
+                    </div>
+                  </div>
+                  <div class="block-exp">
+                    <div class="name-langprog">
+                      Знание Python
+                    </div>
+                    <div class="level-exp">
+                      Очень плохо
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-me" id="aboutme" style="display:none">
+          <div class="container">
+            <div class="inputs">
+              <input type="text" class="your-name-input" name="name" placeholder="Имя">
+              <input type="text" class="telephone-input" placeholder="Телефон">
+            </div>
+            <div class="text">
+              Здесь могла быть моя биография, но мне всего 16, что мне рассказывать?
+            </div>
+          </div>
+        </div>
+    </main>
+    
+    <script type="text/javascript">
+    var visible = false;
+    function about() {
+        if(visible) {
+            document.getElementById('aboutme').style.display = 'none';
+            visible = false;
+        } 
+        else {
+            document.getElementById('aboutme').style.display = 'block';
+            visible = true;
+        }
+    }
+    </script>
+
+
+</body>
+</html>
